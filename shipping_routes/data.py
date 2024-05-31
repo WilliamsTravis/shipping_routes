@@ -14,7 +14,7 @@ URLS = {
     "wb": ("https://datacatalog.worldbank.org/search/dataset/0037580/"
            "Global-Shipping-Traffic-Density")
 }
-
+self.url = "https://datacatalogfiles.worldbank.org/ddh-published/0037580/DR0045406/shipdensity_global.zip?versionId=2023-01-18T20:40:41.1120158Z"
 
 class WorldBank:
     """Methods for Downloading from the world bank."""
@@ -31,6 +31,7 @@ class WorldBank:
         soup = bs(content)
         for a in soup.find_all('a', href=True):
             print("Found the URL:", a['href'])
+
 
 if __name__ == "__main__":
     self = WorldBank()
