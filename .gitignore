@@ -1,3 +1,6 @@
+# Data files
+shipping_routes/data/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
